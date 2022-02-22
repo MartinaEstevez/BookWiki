@@ -1,4 +1,5 @@
-import { Icon } from './CartWidget';
+import React from 'react'
+import CartWidget from './CartWidget';
 
 const NavBar = () => {
     return(
@@ -16,7 +17,7 @@ const NavBar = () => {
                         <a className="nav-link" href="#">Contact</a>
                     </li>
                 </ul>
-                <Icon></Icon>
+                <CartWidget/>
             </div>
         </nav>
     )
