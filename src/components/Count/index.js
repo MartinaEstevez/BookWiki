@@ -31,17 +31,17 @@ const Count = ({ initial, stock, onAdd }) => {
         <button
           className="btn"
           style={{ marginRight: 50, color: "blue", fontSize: 25 }}
-          onClick={increment}
+          onClick={decrement}
         >
-          +
+          -
         </button>
         <p style={{ marginBottom: 0 }}>{count}</p>
         <button
           className="btn"
           style={{ marginLeft: 50, color: "blue", fontSize: 25 }}
-          onClick={decrement}
+          onClick={increment}
         >
-          -
+          +
         </button>
       </div>
       <button
