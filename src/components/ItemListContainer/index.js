@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { getFetch } from "../../helpers/getFetch";
 import { ItemList } from "../ItemList";
 
-export const ItemListContainer = ({greeting}) => {
+export const ItemListContainer = ({ greeting }) => {
   const [loading, setLoading] = useState(true);
   const [items, setItems] = useState([]);
 
