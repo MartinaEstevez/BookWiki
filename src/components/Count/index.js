@@ -17,8 +17,7 @@ const Count = ({ initial, stock, onAdd }) => {
   };
 
   return (
-    <div style={{ width: 300, margin: "auto", backgroundColor: "lightgray" }}>
-      <p style={{ fontFamily: "sans-serif" }}>Count</p>
+    <div style={{ width: 170, margin: "auto", backgroundColor: "lightgray" }}>
       <div
         className="border"
         style={{
