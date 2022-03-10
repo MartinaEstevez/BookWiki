@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../../styles/style.css";
 
 const Count = ({ initial, stock, onAdd }) => {
   const [count, setCount] = useState(initial);
@@ -17,39 +18,18 @@ const Count = ({ initial, stock, onAdd }) => {
   };
 
   return (
-    <div style={{ width: 170, margin: "auto", backgroundColor: "lightgray" }}>
-      <div
-        className="border"
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          backgroundColor: "white",
-        }}
-      >
-        <button
-          className="btn"
-          style={{ marginRight: 50, color: "blue", fontSize: 25 }}
-          onClick={decrement}
-        >
-          -
+    <div className="container containerCount">
+      <div className="border borderCount">
+        <button className="btn btnCount" onClick={decrement}>
+          {" "}
+          -{" "}
         </button>
-        <p style={{ marginBottom: 0 }}>{count}</p>
-        <button
-          className="btn"
-          style={{ marginLeft: 50, color: "blue", fontSize: 25 }}
-          onClick={increment}
-        >
-          +
+        <p className="textCount">{count}</p>
+        <button className="btn btnCount" onClick={increment}>
+          {" "}
+          +{" "}
         </button>
       </div>
-      <button
-        className="btn btn-primary"
-        style={{ width: "100%" }}
-        onClick={Add}
-      >
-        Add
-      </button>
     </div>
   );
 };

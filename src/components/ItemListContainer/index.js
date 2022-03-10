@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
-import { getFetch } from "../../helpers/getFetch";
+import { getItems } from "../../helpers/getItems";
 import { ItemList } from "../ItemList";
 
-export const ItemListContainer = ({ greeting }) => {
+export const ItemListContainer = () => {
   const [loading, setLoading] = useState(true);
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    const getItems = async () => {
+    const fetchItems = async () => {
       try {
-        const products = await getFetch();
+        const products = await getItems();
         setItems(products);
       } catch {
         console.error("Couldn't get products :(");
@@ -18,7 +18,7 @@ export const ItemListContainer = ({ greeting }) => {
       }
     };
 
-    getItems();
+    fetchItems();
   }, []);
 
   return loading ? <p> Loading... </p> : <ItemList items={items} />;

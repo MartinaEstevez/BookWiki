@@ -2,15 +2,16 @@ const products = [
   {
     id: 1,
     image: "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/4351/9781435159587.jpg",
-    title: "Dorian Grey",
+    tittle: "Dorian Grey",
     author: "Oscar Wilde",
     price: 15,
     stock: 10,
+    
   },
   {
     id: 2,
     image: "https://upload.wikimedia.org/wikipedia/commons/9/9b/Jane_Eyre_title_page.jpg",
-    title: "Jane Eyre",
+    tittle: "Jane Eyre",
     author: "Charlotte Brontë",
     price: 20,
     stock: 10,
@@ -18,7 +19,7 @@ const products = [
   {
     id: 3,
     image: "https://cdn.waterstones.com/bookjackets/large/9780/1411/9780141192475.jpg",
-    title: "Emma",
+    tittle: "Emma",
     author: "Jane Austen",
     price: 10,
     stock: 10,
@@ -26,7 +27,7 @@ const products = [
   {
     id: 4,
     image: "https://images.penguinrandomhouse.com/cover/9780451530998",
-    title: "Hard Times",
+    tittle: "Hard Times",
     author: "Charles Dickens",
     price: 14,
     stock: 10,
@@ -34,7 +35,7 @@ const products = [
   {
     id: 5,
     image: "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781787557000/persuasion-9781787557000_hr.jpg",
-    title: "Persuasion",
+    tittle: "Persuasion",
     author: "Jane Austen",
     price: 18,
     stock: 10,
@@ -58,7 +59,7 @@ const products = [
 ];
 
 
-export const getFetch = () => {
+export const getItems = () => {
     return new Promise((resolve) => {
       setTimeout(() => resolve(products), 3000);
     });
