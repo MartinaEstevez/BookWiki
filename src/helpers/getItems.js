@@ -6,7 +6,7 @@ const products = [
     author: "Oscar Wilde",
     price: 15,
     stock: 10,
-    
+    category: "Classics",
   },
   {
     id: 2,
@@ -15,6 +15,7 @@ const products = [
     author: "Charlotte Brontë",
     price: 20,
     stock: 10,
+    category: "Classics",
   },
   {
     id: 3,
@@ -23,6 +24,7 @@ const products = [
     author: "Jane Austen",
     price: 10,
     stock: 10,
+    category: "Classics",
   },
   {
     id: 4,
@@ -31,6 +33,7 @@ const products = [
     author: "Charles Dickens",
     price: 14,
     stock: 10,
+    category: "Classics",
   },
   {
     id: 5,
@@ -39,6 +42,7 @@ const products = [
     author: "Jane Austen",
     price: 18,
     stock: 10,
+    category: "Classics",
   },
   {
     id: 6,
@@ -47,6 +51,7 @@ const products = [
     author: "Bram Stoker",
     price: 25,
     stock: 10,
+    category: "Classics",
   },
   {
     id: 7,
@@ -55,6 +60,7 @@ const products = [
     author: "Louisa May Alcott",
     price: 14,
     stock: 10,
+    category: "Classics",
   },
 ];
 
@@ -64,4 +70,23 @@ export const getItems = () => {
       setTimeout(() => resolve(products), 3000);
     });
   };
-  
+
+
+// detalle de un unico producto
+
+const productDetail = {
+    id: 1,
+    image: "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/4351/9781435159587.jpg",
+    tittle: "Dorian Grey",
+    author: "Oscar Wilde",
+    price: 15,
+    stock: 10, 
+    category: "Classics", 
+}
+
+export const getFetchDetails = () => {
+  return new Promise((resolve) => {
+      setTimeout(() => resolve(productDetail), 3000);
+  });
+};
+

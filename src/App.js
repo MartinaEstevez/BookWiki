@@ -1,12 +1,18 @@
 import React from "react";
 import NavBar from "./components/NavBar";
-import { ItemListContainer } from "./components/ItemListContainer";
+import { ItemListContainer } from "./components/containers/ItemListContainer";
+import ItemDetailContainer from "./components/containers/ItemDetailContainer";
 
 function App() {
   return (
-    <div>
+
+        <div>
       <NavBar />
-      <ItemListContainer />
+      <div className="booksContainer">
+        <ItemListContainer greeting="Classics"/>
+        <ItemDetailContainer/>
+      </div>
+      
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../../styles/style.css";
 
-const Count = ({ initial, stock, onAdd }) => {
+const Count = ({ initial, stock,}) => {
   const [count, setCount] = useState(initial);
   const increment = () => {
     if (count < stock) {
@@ -13,9 +13,7 @@ const Count = ({ initial, stock, onAdd }) => {
       setCount(count - 1);
     }
   };
-  const Add = () => {
-    onAdd(count);
-  };
+  
 
   return (
     <div className="container containerCount">

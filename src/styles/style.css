@@ -30,9 +30,37 @@
   display: inline-block;
 }
 
+.cardTittle{
+  text-align: center;
+  font-size: 13px;
+  height: 40px;
+}
+
+.cardImgContainer{
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.cardImg{
+  width: 80%;
+  height: 197px;
+  margin: 15px
+}
 
 .cardBtn {
   width: 170px;
-  background-color: blue;
+  background-color: lightslategray;
   color: white;
+}
+
+/* CSS for "App.js" starts here*/
+.booksContainer{
+  padding-left: 5%;
+  padding-top: 5%;
+}
+
+.navbar{
+  background-color: lightgray;
 }
