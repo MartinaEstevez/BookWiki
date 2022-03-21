@@ -14,7 +14,7 @@ const ItemDetailContainer = () => {
     getFetchDetails(detailId)
       .then((resp) => setProduct(resp))
       .finally(setLoading(false));
-  }, []);
+  }, [detailId]);
 
   return loading || !product ? (
     <p> Loading... </p>

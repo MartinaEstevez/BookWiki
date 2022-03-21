@@ -3,7 +3,7 @@ import React from "react";
 import NavBar from "./components/NavBar";
 import { ItemListContainer } from "./components/containers/ItemListContainer";
 import ItemDetailContainer from "./components/containers/ItemDetailContainer";
-import Banner from './components/Banner';
+import Cart from './components/Cart';
 
 function App() {
   return (
@@ -12,9 +12,10 @@ function App() {
           <NavBar />
           <div className="booksContainer">
           <Routes>
-              <Route path='/home' element={<ItemListContainer greeting='HOME' />} />                                        
+              <Route path='/' element={<ItemListContainer greeting='HOME' />} />                                        
               <Route path='/category/:categoryId' element={<ItemListContainer/>} />                                        
               <Route path='/detail/:detailId' element={<ItemDetailContainer />} />
+              <Route path='/cart' element={<Cart/>}/>
               <Route path='/*' element={ <Navigate to='/' replace /> } /> 
           </Routes>
           </div>

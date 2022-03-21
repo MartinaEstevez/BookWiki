@@ -1,9 +1,6 @@
 import React from "react";
-import { useParams } from "react-router-dom";
 
 const Banner = () => {
-  const { detailId } = useParams();
-  console.log(detailId);
   return (
     <div className="bannerContainer container">
       <div className="bannerHeader">
