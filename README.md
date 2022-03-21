@@ -1,3 +1,11 @@
+#Introduction
+
+This project is a online book shop simulation with three different sections diving the products apart from "Home".
+
+##Focus
+
+I wanted to focus on the visuals and experience of the user, being influenced by other Websites as "goodreads.com" and "barnesandnobles.com"
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -1,27 +1,23 @@
 import React, { useEffect, useState } from "react";
 import ItemDetail from "../../ItemDetail";
-import { getItems } from "../../../helpers/getItems";
+import { getFetchDetails } from "../../../helpers/getItems";
+import { useParams } from "react-router-dom";
 
 const ItemDetailContainer = () => {
   const [loading, setLoading] = useState(false);
-  const [productDetail, setProductDetail] = useState({});
+  const [product, setProduct] = useState({});
+  const { detailId } = useParams()
 
   // llamada a api
   useEffect(() => {
     setLoading(true);
-    getItems()
-      .then((resp) => {
-        console.log(resp);
-        return setProductDetail(resp.find((prod) => prod.id === 1));
-      })
+    getFetchDetails(detailId)
+      .then(resp=> setProduct(resp))
       .finally(setLoading(false));
   }, []);
 
-  return loading || !productDetail ? (
-    <p> Loading... </p>
-  ) : (
-    <ItemDetail productDetail={productDetail} />
-  );
+  return (loading || !product) ? <p> Loading... </p> : <ItemDetail product={product} />
+  
 };
 
 export default ItemDetailContainer;

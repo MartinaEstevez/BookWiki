@@ -1,15 +1,18 @@
 /* CSS for "Count.js" starts here */
 .containerCount {
-  width: 170px;
+  width: 60%;
   padding: 0px;
-  background-color: lightgray;
+}
+
+.addBtnCount{
+  background-color: rgb(241, 240, 240);
+    width: 100%;
 }
 
 .borderCount {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
 }
 
 .textCount {
@@ -51,16 +54,117 @@
 
 .cardBtn {
   width: 170px;
-  background-color: lightslategray;
-  color: white;
+  background-color: whitesmoke;
 }
+
+.cardBtn:hover {
+  background-color: lightgrey;}
+
+.cardBtn:focus{
+  background-color: lightgrey;}
 
 /* CSS for "App.js" starts here*/
 .booksContainer{
   padding-left: 5%;
-  padding-top: 5%;
+  padding-top: 2%;
 }
 
+
+/* CSS for "NavBar starts here */
 .navbar{
-  background-color: lightgray;
+  background-color:rgb(240, 235, 222);
+}
+.nav-link{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(46, 39, 36);
+  font-size: 15px;
+}
+
+.nav-link:hover {
+  color:darkblue;}
+
+.nav-link:focus{
+  color:darkblue;}
+
+ 
+/* CSS for "Banner" starts here */
+.bannerContainer{
+  width: 100%;
+}
+
+
+/* CSS for "ItemDetail" starts here */
+.detailContainer{
+  display: flex;
+}
+
+@media only screen and (max-width: 769px){
+  .detailContainer{
+    flex-direction: column;
+  }
+}
+
+.detailImgContainer{
+  margin: 5%;
+}
+
+.detailInfoContainer{
+  margin: 5%;
+}
+
+.detailImg{
+  width: 330px;
+  height: 500px;
+}
+
+.detailTittle{
+  font-family: fangsong;
+  margin-top: 5%;
+  font-size: 25px;
+}
+
+.detailAuthor{
+  font-size: 15px;
+  font-family: sans-serif;
+  color: darkgreen;
+}
+
+.detailPrice{
+  border-top: 1px solid #ccc;
+  font-size: 22px;
+  margin-top: 9%;
+}
+
+.detailCategory{
+  font-size: 13px;
+}
+
+.detailResume{
+  margin-top: 3%;
+  font-size: 14px;
+}
+
+/* CSS for "Banner" starts here */
+.bannerContainer{
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  justify-items: center;
+  align-items: center;
+  width: 70%;
+  margin-bottom: 3%;
+}
+
+.bannerHeader{
+  align-items: center;
+  justify-items: center;
+  margin: 2%;
+  text-align: center;
+}
+
+.bannerText{
+  align-items: center;
+  justify-items: center;
+  margin: 2%;
+  text-align: center;
 }

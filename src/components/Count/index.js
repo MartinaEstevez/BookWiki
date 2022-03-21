@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../../styles/style.css";
 
-const Count = ({ initial, stock,}) => {
+const Count = ({ initial, stock, onAdd}) => {
   const [count, setCount] = useState(initial);
   const increment = () => {
     if (count < stock) {
@@ -13,21 +13,28 @@ const Count = ({ initial, stock,}) => {
       setCount(count - 1);
     }
   };
+  const Add = () => {
+    onAdd( count )
+}
+
   
 
   return (
-    <div className="container containerCount">
-      <div className="border borderCount">
-        <button className="btn btnCount" onClick={decrement}>
+    <div className="containerCount container">
+      <div className="borderCount border">
+        <button className="btnCount btn" onClick={decrement}>
           {" "}
           -{" "}
         </button>
         <p className="textCount">{count}</p>
-        <button className="btn btnCount" onClick={increment}>
+        <button className="btnCount btn" onClick={increment}>
           {" "}
           +{" "}
         </button>
       </div>
+      <button className="addBtnCount btn" onClick={Add}>
+        Add
+      </button>
     </div>
   );
 };
