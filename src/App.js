@@ -5,6 +5,7 @@ import { ItemListContainer } from "./components/containers/ItemListContainer";
 import ItemDetailContainer from "./components/containers/ItemDetailContainer";
 import Cart from './components/Cart';
 import CartContextProvider from './components/CartContext';
+import AccountForm from './components/AccountForm';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
               <Route path='/category/:categoryId' element={<ItemListContainer/>} />                                        
               <Route path='/detail/:detailId' element={<ItemDetailContainer />} />
               <Route path='/cart' element={<Cart/>}/>
+              <Route path='/AccountForm'element={<AccountForm/>} />
               <Route path='/*' element={ <Navigate to='/' replace /> } /> 
           </Routes>
           </div>

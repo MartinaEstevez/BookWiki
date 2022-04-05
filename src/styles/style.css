@@ -87,6 +87,10 @@
 .nav-link:focus{
   color:darkblue;}
 
+.cartLink{
+  text-decoration: none;
+}
+
  
 /* CSS for "Banner" starts here */
 .bannerContainer{
@@ -102,6 +106,23 @@
 @media only screen and (max-width: 769px){
   .detailContainer{
     flex-direction: column;
+  }
+  .cartContainer{
+    flex-direction: column;
+  }
+  
+  .leftContainer{
+    min-width: 98%;
+    position: relative;
+  }
+
+  .orderContainer{
+    position: relative;
+  }
+
+  .rightContainer{
+    width: 98%;
+    margin-top: 5%;
   }
 }
 
@@ -194,7 +215,7 @@
 
 .cartItemInformation{
   margin-left: 3%;
-  max-width: 225px;
+  max-width: 150px;
 }
 
 .cartItemPrice{
@@ -235,7 +256,7 @@
 
 .rightContainer{
   width: 50%;
-  
+  margin-right: 5%;
   max-width: 300px;
   max-height: 270px;
 }
@@ -253,12 +274,14 @@
 }
 
 .leftContainer{
-  width: 50%;
+  width: 55%;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
 }
+
+
 
 .orderText{
   display: flex;
@@ -290,6 +313,10 @@
   margin: 6%;
 }
 
+.finishShoppingBtn{
+  margin: 6%;
+}
+
 .cartBanner{
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
@@ -314,3 +341,85 @@
 .cartBtn{
   margin-left: 45%;
 }
+
+/* CSS for cartWidget starts here */
+.productQuantity{
+  border-radius: 50%;
+  padding-left: 4px;
+  padding-right: 4.5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  color: #f0ebde;
+  background-color: gray;
+  font: 11px Arial, sans-serif;
+}
+
+
+/* CSS for "AccountForm" */
+.loginForm {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px;
+  color: dimgrey;}
+
+   
+.header {
+    border-bottom: 1px solid #f0f0f0;
+    padding: 20px 40px;}    
+    
+.header h2 {
+    margin: 0;}
+    
+
+.form {
+  padding: 30px 40px;	}
+  
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;}
+  
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;}
+  
+.form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;}
+  
+.form-control input:focus {
+  outline: 0;
+  border-color: #777;}
+ 
+.form button {
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;}
+
+.container-welcome{
+height: 30%;
+margin-top: 5%;
+padding-top: 5%;
+background: #152F4F;
+color:white;}
+
+.welcome-row{
+  align-items: center;
+  text-align: center;}
+
+.welcome-h2{
+  padding-bottom: 5%;}
+
+.animation{
+  display: none;}
+  

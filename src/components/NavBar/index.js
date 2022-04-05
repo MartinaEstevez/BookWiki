@@ -41,17 +41,22 @@ const NavBar = () => {
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to="category/Poetry" className="nav-link" href="Poetry">
+            <NavLink
+              to="category/Poetry"
+              className="nav-link"
+              aria-current="page"
+              href="Poetry"
+            >
               Poetry
             </NavLink>
           </li>
         </ul>
         <div>
           {cartList.length > 0 && (
-          <NavLink to="/Cart">
-            <CartWidget />
-          </NavLink> 
-        )}
+            <NavLink to="/Cart" className={"cartLink"}>
+              <CartWidget />
+            </NavLink>
+          )}
         </div>
       </div>
     </nav>

@@ -41,7 +41,6 @@ function CartContextProvider({children}) {
                 setCartList([...temporalCartList]) 
             }
         }
-        
     }
 
     const emptyCart = () => {
@@ -56,6 +55,14 @@ function CartContextProvider({children}) {
         return price;
     }
 
+    const productQuantity = () =>{
+        let quantity = 0
+        cartList.forEach(cartProduct => {
+            quantity = quantity + (cartProduct.quantity)
+        })
+        return quantity;
+    }
+
     
     return (
         <CartContext.Provider value={{
@@ -64,6 +71,7 @@ function CartContextProvider({children}) {
             emptyCart,
             substractItem,
             totalPrice,
+            productQuantity,
         }}>
             {children}
         </CartContext.Provider>

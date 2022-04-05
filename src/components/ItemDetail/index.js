@@ -1,22 +1,17 @@
 import React from "react";
 import { useState } from "react";
-import { useParams } from "react-router-dom";
 import Count from "../Count";
 import { useCartContext } from "../CartContext";
 import { Link  } from "react-router-dom";
 
 const ItemDetail = ({ product }) => {
   const [count, setCount] = useState(null)
-  const { detailId } = useParams();
-  console.log(detailId);
-  const { addItem, cartList } = useCartContext()
+  const { addItem } = useCartContext()
 
   const onAdd = cant =>{
-    console.log(cant)
     setCount(cant)
     addItem({ ...product, quantity: cant })
   }
-  console.log(cartList)
 
   return (
     <div>

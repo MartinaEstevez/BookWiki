@@ -1,10 +1,10 @@
 import React from "react";
 import { useCartContext } from "../CartContext";
 import { Link } from "react-router-dom";
+import AccountForm from "../AccountForm";
 
-function Cart() {
+const Cart = () => {
   const { cartList, emptyCart, substractItem, totalPrice } = useCartContext();
-  console.log(cartList);
   return (
     <div className="container container-fluid">
       <div>
@@ -49,7 +49,7 @@ function Cart() {
                 <div className="orderContainer">
                   <div className="orderTittle">Order Summery</div>
                   <div className="orderText">
-                    <p>Suptotal ({cartList.length} items)</p>
+                    <p>Suptotal (items)</p>
                     <p>${totalPrice()}U$</p>
                   </div>
                   <div className="orderText">
@@ -71,6 +71,13 @@ function Cart() {
               <button className="btn btn-outline-secondary" onClick={emptyCart}>
                 Empty Cart
               </button>
+            </div>
+            <div className="finishShoppingBtn">
+              <Link to="/AccountForm">
+                <button className="btn btn-outline-success">
+                  Finish Shopping
+                </button>
+              </Link>
             </div>
           </div>
          : 
