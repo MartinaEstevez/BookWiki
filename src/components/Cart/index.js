@@ -8,7 +8,7 @@ const Cart = () => {
   return (
     <div className="container container-fluid">
       <div>
-        {cartList.length > 0 ? 
+        {cartList.length > 0 ? (
           <div>
             <div className="cartContainerTittle">
               <h1 className="cartTittle">My Shopping Cart</h1>
@@ -80,7 +80,7 @@ const Cart = () => {
               </Link>
             </div>
           </div>
-         : 
+        ) : (
           <div className="cartBanner">
             <div className="cartBannerHeader">
               <p className="cartBannerText">Your cart is empty. </p>
@@ -94,10 +94,10 @@ const Cart = () => {
               </button>
             </Link>
           </div>
-        }
+        )}
       </div>
     </div>
   );
-}
+};
 
 export default Cart;
