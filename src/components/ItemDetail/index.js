@@ -3,6 +3,7 @@ import { useState } from "react";
 import Count from "../Count";
 import { useCartContext } from "../CartContext";
 import { Link  } from "react-router-dom";
+import "./style.css";
 
 const ItemDetail = ({ product }) => {
   const [count, setCount] = useState(null)

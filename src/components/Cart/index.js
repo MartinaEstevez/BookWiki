@@ -1,10 +1,12 @@
 import React from "react";
 import { useCartContext } from "../CartContext";
 import { Link } from "react-router-dom";
-import AccountForm from "../AccountForm";
+import { useNavigate } from "react-router-dom";
+import "./style.css"
 
 const Cart = () => {
   const { cartList, emptyCart, substractItem, totalPrice } = useCartContext();
+  const navigate = useNavigate();
   return (
     <div className="container container-fluid">
       <div>
@@ -24,7 +26,12 @@ const Cart = () => {
                       <img src={products.image} alt="" className="cartImg" />
                     </div>
                     <div className="cartItemInformation">
-                      <div className="cartItemTittle">{`${products.tittle} by ${products.author}`}</div>
+                      <div
+                        onClick={() => {
+                          navigate(`/detail/${products.id}`);
+                        }}
+                        className="cartItemTittle"
+                      >{`${products.tittle} by ${products.author}`}</div>
                       <div className="cartItemPrice">${products.price}U$</div>
                       <div className="cartItemInStock">
                         quantity selected: {products.quantity}

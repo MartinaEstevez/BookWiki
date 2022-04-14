@@ -2,6 +2,7 @@ import React from "react";
 import CartWidget from "../CartWidget";
 import { useCartContext } from "../CartContext";
 import { NavLink } from "react-router-dom";
+import "./style.css"
 
 const NavBar = () => {
   const { cartList } = useCartContext();

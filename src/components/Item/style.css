@@ -1,0 +1,37 @@
+.cardContainer {
+  width: 170px;
+  margin: 50px;
+  display: inline-block;
+}
+
+.cardTittle {
+  text-align: center;
+  font-size: 13px;
+  height: 40px;
+}
+
+.cardImgContainer {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.cardImg {
+  width: 80%;
+  height: 197px;
+  margin: 15px;
+}
+
+.cardBtn {
+  width: 170px;
+  background-color: whitesmoke;
+}
+
+.cardBtn:hover {
+  background-color: lightgrey;
+}
+
+.cardBtn:focus {
+  background-color: lightgrey;
+}

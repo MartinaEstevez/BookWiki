@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { ItemList } from "../../ItemList";
 import Banner from "../../Banner";
-import { collection, doc, getDoc, getDocs, getFirestore, limit, query, where } from "firebase/firestore"
+import { collection, getDocs, getFirestore, limit, query, where } from "firebase/firestore"
 
 export const ItemListContainer = ({ greeting }) => {
   const [loading, setLoading] = useState(true);

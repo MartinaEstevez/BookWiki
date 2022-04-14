@@ -1,0 +1,26 @@
+.containerCount {
+    width: 60%;
+    padding: 0px;
+  }
+  
+  .addBtnCount{
+    background-color: rgb(241, 240, 240);
+      width: 100%;
+  }
+  
+  .borderCount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .textCount {
+    margin-bottom: 0px;
+  }
+  
+  .btnCount {
+    margin-left: 50px;
+    margin-right: 50px;
+    color: blue;
+    font-size: 25px;
+  }

@@ -1,0 +1,21 @@
+.navbar {
+  background-color: rgb(240, 235, 222);
+}
+.nav-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(46, 39, 36);
+  font-size: 15px;
+}
+
+.nav-link:hover {
+  color: darkblue;
+}
+
+.nav-link:focus {
+  color: darkblue;
+}
+
+.cartLink {
+  text-decoration: none;
+}

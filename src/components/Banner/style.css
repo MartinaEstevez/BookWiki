@@ -1,0 +1,26 @@
+.bannerContainer {
+  width: 100%;
+}
+
+.bannerContainer {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  justify-items: center;
+  align-items: center;
+  width: 70%;
+  margin-bottom: 3%;
+}
+
+.bannerHeader {
+  align-items: center;
+  justify-items: center;
+  margin: 2%;
+  text-align: center;
+}
+
+.bannerText {
+  align-items: center;
+  justify-items: center;
+  margin: 2%;
+  text-align: center;
+}

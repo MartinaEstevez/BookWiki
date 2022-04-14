@@ -1,0 +1,151 @@
+.cartContainerTittle {
+  text-align: center;
+  margin: 50px;
+  font-family: fangsong;
+  border-bottom: 1px solid #ccc;
+}
+
+.cartItemTittle:hover {
+  text-decoration-line: underline;
+}
+
+.cartItemContainer {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 3%;
+  padding: 3%;
+  margin: 10px;
+  border-width: 90%;
+}
+
+.cartImg {
+  width: 100px;
+  height: 130px;
+}
+
+.cartItemInformation {
+  margin-left: 3%;
+  max-width: 150px;
+}
+
+.cartItemPrice {
+  border-top: 1px solid #ccc;
+  font-size: 22px;
+  margin-top: 2%;
+}
+
+.cartItemInStock {
+  font-size: 11px;
+  margin-top: 5%;
+}
+
+.cartItemTittle {
+  font-family: fangsong;
+}
+
+.cartBtnContainer {
+  align-self: center;
+  margin: auto;
+  max-width: 33px;
+}
+
+.cartBtn {
+  border-color: darkgrey;
+  color: black;
+  height: 35px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.cartContainer {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  justify-content: space-around;
+}
+
+.rightContainer {
+  width: 50%;
+  margin-right: 5%;
+  max-width: 300px;
+  max-height: 270px;
+}
+
+.orderContainer {
+  position: fixed;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  width: 300px;
+  height: 270px;
+  padding: 3%;
+}
+
+.leftContainer {
+  width: 55%;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.orderText {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.orderTittle {
+  font-size: 25px;
+  font-family: fangsong;
+}
+
+.totalPrice {
+  display: flex;
+  font-weight: bold;
+  justify-content: space-between;
+  border-top: 1px solid #ccc;
+}
+
+.cartHeader {
+  padding: 2rem;
+  background: #f2f2f1;
+  font-size: 25px;
+  font-family: fangsongs;
+}
+
+.emptyCartBtn {
+  margin: 6%;
+}
+
+.finishShoppingBtn {
+  margin: 6%;
+}
+
+.cartBanner {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  width: 90%;
+  margin-bottom: 3%;
+  margin: auto;
+}
+.cartBannerHeader {
+  align-items: center;
+  justify-items: center;
+  margin: 2%;
+  text-align: center;
+}
+
+.cartBannerText {
+  align-items: center;
+  justify-items: center;
+  margin: 2%;
+  text-align: center;
+}
+
+.cartBtn {
+  margin-left: 45%;
+}

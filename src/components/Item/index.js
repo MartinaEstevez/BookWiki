@@ -1,7 +1,6 @@
 import React from "react";
-import "../../styles/style.css";
+import "./style.css";
 import { useNavigate } from "react-router-dom";
-//import { getItemDetails } from "../../helpers/getItemDetail";
 
 export const Item = ({ id, tittle, author, image }) => {
   const navigate = useNavigate();
