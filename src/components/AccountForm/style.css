@@ -46,9 +46,8 @@
   width: 100%;
 }
 
-.confirmationModal {
-  width: 500px;
-  height: 400px;
+.orderModal{
+  display: flex;
 }
 
 .textModal {
@@ -63,7 +62,8 @@
   border-bottom: 1px solid #ccc;
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
-  padding: 5%;
+  padding: 1%;
+  height: 210px;
 }
 
 .orderTittleModal {
@@ -75,7 +75,7 @@
   display: flex;
   justify-content: space-between;
   font-size: 14px;
-  margin-top: 10px;
+  margin-top: 3px;
 }
 
 .totalPriceModal {
@@ -85,16 +85,12 @@
   border-top: 1px solid #ccc;
 }
 
-.orderModal {
-}
 
 .itemModalContainer {
   display: flex;
   border-bottom: 1px solid #ccc;
-  margin-bottom: 3%;
-  padding: 3%;
+  padding: 2%;
   margin: 10px;
-  border-width: 90%;
   justify-content: space-around;
 }
 

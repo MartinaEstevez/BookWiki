@@ -4,6 +4,41 @@
   display: inline-block;
 }
 
+
+@media only screen and (max-width: 545px) {
+  .cardContainer{
+    margin-left: 30px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .cardContainer{
+    margin-left: 2%;
+  }
+}
+
+@media only screen and (max-width: 618px) {
+  .cardContainer{
+    margin: 3%;
+    width: 141px;
+  }
+  .cardImg{
+    padding-right: 7px;
+    max-width: 116px;
+    max-height: 160px;
+  }
+
+  .cardBtn{
+    width: 117px;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 445px) {
+  .cardContainer{
+    margin: 15%;
+  }
+}
 .cardTittle {
   text-align: center;
   font-size: 13px;
@@ -19,12 +54,12 @@
 
 .cardImg {
   width: 80%;
-  height: 197px;
   margin: 15px;
+  height: 200px
 }
 
 .cardBtn {
-  width: 170px;
+  width: 100%;
   background-color: whitesmoke;
 }
 

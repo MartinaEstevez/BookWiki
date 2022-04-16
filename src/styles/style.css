@@ -4,3 +4,8 @@
   padding-top: 2%;
 }
 
+@media only screen and (max-width: 869px){
+  .booksContainer{
+    padding-left: 3%;
+  }
+}

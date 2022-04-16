@@ -24,3 +24,13 @@
   margin: 2%;
   text-align: center;
 }
+
+@media only screen and (max-width: 436px) {
+  .bannerText{
+    font-size: 13px;
+  }
+
+  .bannerHeader{
+    font-size: 13px;
+  }
+}

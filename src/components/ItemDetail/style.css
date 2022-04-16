@@ -2,7 +2,7 @@
   display: flex;
 }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 768px) {
   .detailContainer {
     flex-direction: column;
   }
@@ -23,6 +23,16 @@
     width: 98%;
     margin-top: 5%;
   }
+
+  .detailImg{
+    max-width: 160px;
+    max-height: 250px;
+  }
+
+  .detailImgContainer{
+    max-width: 160px;
+    align-self: center;
+  }
 }
 
 .detailImgContainer {
@@ -37,6 +47,8 @@
   width: 330px;
   height: 500px;
 }
+
+
 
 .detailTittle {
   font-family: fangsong;

@@ -14,11 +14,16 @@
 } 
 
 .modalBody{
-    display: flex;
     flex-direction: column;
     padding: 20px;
     border-radius: 10px;
     background-color: white;
+    min-height: 80%;
+    min-width: 70%;
+}
+
+.modalContent{
+    min-height: 520px;
 }
 
 .modalHeader{
